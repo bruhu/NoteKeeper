@@ -23,8 +23,11 @@ class MainActivity : AppCompatActivity() {
         // populating spinner (with courses from our DataManager Class) using Adapter Class
         // new instance of DataManager
         val dm = DataManager()
-        // instance of ArrayAdapter
-        val adapterCourses = ArrayAdapter
+        // instance of ArrayAdapter - generic type, we must specify with <>
+        // three params: context, layout, and data we want to display
+        val adapterCourses = ArrayAdapter<CourseInfo>(this, android.R.layout.simple_spinner_item, dm.courses.values.toList())
+        // this method will specify the layout for the dropdown
+        adapterCourses.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
