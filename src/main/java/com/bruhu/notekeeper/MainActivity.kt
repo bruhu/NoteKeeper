@@ -7,10 +7,10 @@ import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.ArrayAdapter
 
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
+import android.widget.ArrayAdapter as ArrayAdapter
 
 class MainActivity : AppCompatActivity() {
 
@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         // new instance of DataManager
         val dm = DataManager()
         // instance of ArrayAdapter
-        val adapterCourses = ArrayAdapter()
+        val adapterCourses = ArrayAdapter
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
