@@ -28,6 +28,9 @@ class MainActivity : AppCompatActivity() {
         val adapterCourses = ArrayAdapter<CourseInfo>(this, android.R.layout.simple_spinner_item, dm.courses.values.toList())
         // this method will specify the layout for the dropdown
         adapterCourses.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+
+        // to connect the adapter to the spinner
+        spinnerCourses.adapter = adapterCourses
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
