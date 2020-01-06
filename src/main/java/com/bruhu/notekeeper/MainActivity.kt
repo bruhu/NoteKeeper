@@ -18,6 +18,10 @@ class MainActivity : AppCompatActivity() {
         // setContentView indicates which layout we want to be displayed by the activity, with the files it includes (eg content_main)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
+
+        // populating spinner (with courses from our DataManager Class) using Adapter Class
+// new instance of DataManager
+        val dm = DataManager()
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
