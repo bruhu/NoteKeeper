@@ -1,7 +1,7 @@
 package com.bruhu.notekeeper
 
 // this file kind is Class
-// It won't need a constructor, but will require some properties, for the collection of courses and for the collection of notes
+// It won't need a constructor, but will require some properties for the collection of courses and for the collection of notes
 class DataManager {
     // properties
     val courses = HashMap<String, CourseInfo>()
