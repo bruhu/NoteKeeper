@@ -4,7 +4,7 @@ package com.bruhu.notekeeper
 
 class CourseInfo(val courseId: String, val title: String) {
     override fun toString(): String {
-        // we need a String representation for our info to be displayed, and here we deconstruct what we need to be displayed
+        // we need a String representation for our info to be displayed, and here we deconstruct what we need to be displayed - works!
         return title
     }
 }
