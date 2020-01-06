@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         // this method will specify the layout for the dropdown
         adapterCourses.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
 
-        // to connect the adapter to the spinner
+        // assign the adapter we created to the spinnerCourses adapter property
         spinnerCourses.adapter = adapterCourses
     }
 
