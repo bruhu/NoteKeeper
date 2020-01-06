@@ -7,6 +7,7 @@ import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.ArrayAdapter
 
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
@@ -20,8 +21,10 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
 
         // populating spinner (with courses from our DataManager Class) using Adapter Class
-// new instance of DataManager
+        // new instance of DataManager
         val dm = DataManager()
+        // instance of ArrayAdapter
+        val adapterCourses = ArrayAdapter()
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
