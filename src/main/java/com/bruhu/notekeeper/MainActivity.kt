@@ -1,5 +1,7 @@
 package com.bruhu.notekeeper
 
+// Kotlin class for Activity
+
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
@@ -13,22 +15,9 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        // setContentView indicates which layout we want to be displayed by the activity, with the files it includes (eg content_main)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
-
-        fab.setOnClickListener { view ->
-            // We will access the view through val with its ID with the text property
-            // CharSequence toString, then toInt
-            val originalValue = textDisplayedValue.text.toString().toInt()
-            // but we want to double this value, thus:
-            val newValue = originalValue * 2
-            textDisplayedValue.text = newValue.toString()
-            Snackbar.make(
-                view, "Value $originalValue changed to $newValue",
-                Snackbar.LENGTH_LONG
-            )
-                .show()
-        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
