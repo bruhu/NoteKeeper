@@ -9,6 +9,7 @@
     tools:showIn="@layout/activity_note_list">
 
     <ListView
+        android:id="@+id/listNotes"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
