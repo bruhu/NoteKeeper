@@ -16,10 +16,10 @@ class NoteListActivity : AppCompatActivity() {
 
         // code for launching our Activity to edit Notes will go here
         fab.setOnClickListener { view ->
-            // create an intent
+            // create an intent to describe the activity we want
             var activityIntent = Intent(this, MainActivity::class)
             // start the activity method
-            startActivity()
+            startActivity(activityIntent)
         }
     }
 
