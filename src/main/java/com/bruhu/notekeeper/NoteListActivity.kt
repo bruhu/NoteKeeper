@@ -18,7 +18,7 @@ class NoteListActivity : AppCompatActivity() {
         fab.setOnClickListener { view ->
             // create an intent to describe the activity we want
             val activityIntent = Intent(this, MainActivity::class.java)
-            // start the activity method
+            // start the activity method bamz
             startActivity(activityIntent)
         }
     }
