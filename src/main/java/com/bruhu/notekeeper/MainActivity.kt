@@ -20,7 +20,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
 
-
         // instance of ArrayAdapter - generic type, we must specify with <>
         // three params: context, layout, and data we want to display
         val adapterCourses = ArrayAdapter<CourseInfo>(this, android.R.layout.simple_spinner_item, DataManager.courses.values.toList())
