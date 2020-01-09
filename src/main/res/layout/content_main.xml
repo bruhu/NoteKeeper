@@ -47,4 +47,5 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/spinnerCourses"
         app:layout_constraintTop_toBottomOf="@+id/textNoteTitle" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
