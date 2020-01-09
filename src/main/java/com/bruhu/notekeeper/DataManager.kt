@@ -2,7 +2,7 @@ package com.bruhu.notekeeper
 
 // this file kind is Class
 // It won't need a constructor, but will require some properties for the collection of courses and for the collection of notes
-class DataManager {
+object DataManager {
     // properties
     val courses = HashMap<String, CourseInfo>()
     val notes = ArrayList<NoteInfo>()
@@ -12,6 +12,7 @@ class DataManager {
         // call initialize courses function, evey time an instance is created, this block will automatically run, aka populate a collection of courses
         // ! they accept no parameters, BUT can access the parameters of our constructor
         initializeCourses()
+        // this method will populate our notes
         initializeNotes()
     }
     // code to initialize the class
