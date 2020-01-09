@@ -20,12 +20,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
 
-        // populating spinner (with courses from our DataManager Class) using Adapter Class
-        // new instance of DataManager
-        val dm = DataManager()
+
         // instance of ArrayAdapter - generic type, we must specify with <>
         // three params: context, layout, and data we want to display
-        val adapterCourses = ArrayAdapter<CourseInfo>(this, android.R.layout.simple_spinner_item, dm.courses.values.toList())
+        val adapterCourses = ArrayAdapter<CourseInfo>(this, android.R.layout.simple_spinner_item, DataManager.courses.values.toList())
         // this method will specify the layout for the dropdown
         adapterCourses.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
 
