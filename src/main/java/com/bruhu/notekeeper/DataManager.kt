@@ -13,7 +13,7 @@ object DataManager {
         // ! they accept no parameters, BUT can access the parameters of our constructor
         initializeCourses()
         // this method will populate our notes
-        //initializeNotes()
+        //initinitializeNotes()
     }
     // code to initialize the class
 
