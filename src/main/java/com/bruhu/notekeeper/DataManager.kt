@@ -12,6 +12,7 @@ class DataManager {
         // call initialize courses function, evey time an instance is created, this block will automatically run, aka populate a collection of courses
         // ! they accept no parameters, BUT can access the parameters of our constructor
         initializeCourses()
+        initializeNotes()
     }
     // code to initialize the class
 
