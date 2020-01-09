@@ -13,9 +13,14 @@ object DataManager {
         // ! they accept no parameters, BUT can access the parameters of our constructor
         initializeCourses()
         // this method will populate our notes
-        //initinitializeNotes()
+        initializeNotes()
     }
     // code to initialize the class
+
+    private fun initializeNotes() {
+        notes.add(NoteInfo(courses.get("android_intents")!!, "My Android Intents Note", "This is an android note."))
+        notes.add(NoteInfo(courses.get("java_lang")!!, "My Java Note", "This is a note."))
+    }
 
     // this will be a private function, so it can't be called from anywhere else other than this class
     private fun initializeCourses() {
@@ -41,5 +46,7 @@ object DataManager {
         // this function will initialize our course collection with four courses
         // this code will run whenever an instance of our DataManager class is created - we can do that with an initializer block ^^^^^^
     }
+
+
 
 }
